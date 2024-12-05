@@ -5,89 +5,200 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yamuna's Portfolio</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        /* Reset and Global Styles */
+        * {
             margin: 0;
-            padding: 20px;
-            background-color: #f0f8ff; /* Light blue background */
+            padding: 0;
+            box-sizing: border-box;
         }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7fc;
+            color: #333;
+            line-height: 1.6;
+            padding: 30px;
+        }
+
+        /* Container for Layout */
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            max-width: 1200px;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Header Section */
         h1 {
-            color: #333; /* Dark text for contrast */
             text-align: center;
+            font-size: 2.5rem;
+            color: #007bff;
             margin-bottom: 20px;
         }
-        section {
-            margin: 20px 0;
-        }
+
+        /* Section Titles */
         h2 {
-            color: #007bff; /* Blue for section headers */
+            color: #007bff;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
         }
+
+        /* Section Styling */
+        section {
+            margin-bottom: 30px;
+        }
+
         p {
-            line-height: 1.5;
+            font-size: 1rem;
+            margin-bottom: 20px;
         }
+
+        ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .contact p {
+            font-size: 1rem;
+            color: #fff;
+        }
+
+        /* Contact Section Styling */
         .contact {
-            background-color: #007bff; /* Blue background for contact info */
+            background-color: #007bff;
             color: white;
-            padding: 10px;
+            padding: 20px;
             border-radius: 5px;
             text-align: center;
+            margin-top: 20px;
+        }
+
+        .contact a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Hover Effects */
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Skills Section Styling */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .skills li {
+            width: 45%;
+            background-color: #f1f1f1;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Education Section Styling */
+        .education li {
+            margin-bottom: 15px;
+        }
+
+        .education h3 {
+            color: #007bff;
+            font-size: 1.2rem;
+        }
+
+        .education p {
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+
+        /* Responsive Layout */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+
+            .skills li {
+                width: 100%;
+            }
         }
     </style>
 </head>
 <body>
-    
-    <section>
-        <h2>About Me</h2>
-        <p>Hello! I'm Yamuna, a passionate developer with a keen interest in creating dynamic and responsive web applications. I enjoy solving complex problems and continuously learning new technologies.</p>
-    </section>
-    
-    <section>
-        <h2>Skills</h2>
-        <p>My skill set includes:</p>
-        <ul>
-            <li>HTML, CSS, and JavaScript</li>
-            <li>Java Programming Language</li>
-            <li>Backend development with Spring Boot</li>
-            <li>Database management with MySQL and MongoDB</li>
-        </ul>
-    </section>
-     <div class="education-container">
-        <h1>Education</h1>
-        <div class="underline"></div>
 
-        <!-- Example education items -->
-        <div class="education-item">
-            <h2>SSLC</h2>
-            <p>Shrushti Public School,2017 - 2018</p>
-            <p>Percentage-95.36%</p>
-        </div>
-        
-        <div class="education-item">
-            <h2>Pre-University College</h2>
-            <p>St Theresa Pu College,2018 - 2020</p>
-             <p>Percentage-90.0%</p>
-            
-        </div>
-        
-        <div class="education-item">
-            <h2>Bachelor of Computer Science Engineering</h2>
-            <p>Sambhram Institute of Technology,2020 - 2024</p>
-            <p>cgpa-8.3</p>
-            
-        </div>
-    <section>
-        <h2>Projects</h2>
-        <p>Here are some projects I have worked on:</p>
-        <ul>
-            <li><strong>Personal Portfolio Website</strong> - A responsive website showcasing my skills and projects.</li>
-            <li><strong>Car service system</strong> - This is a web-based car service management system that allows users to book car services online. The system provides mechanics with an interface to manage appointments and track the service status of vehicles.</li>
-            <li><strong>Multiple deasese pridiction system using MachineLearning</strong> This is a machine learning-based web application designed to predict the likelihood of multiple diseases based on user input. The system uses a combination of historical health data and user symptoms to provide probabilistic predictions for diseases such as diabetes, heart disease, and lungs disease.</li>
-        </ul>
-    </section>
+    <div class="container">
 
-    <section class="contact">
-        <h2>Contact Me</h2>
-        <p>If you'd like to get in touch, please reach out via email: <a href="mailto:rachana@example.com" style="color: white;">ryamuna089@gmail.com</a></p>
-    </section>
+        <!-- Header -->
+        <h1>Yamuna's Portfolio</h1>
+
+        <!-- About Me Section -->
+        <section>
+            <h2>About Me</h2>
+            <p>Hello! I'm Yamuna, a passionate developer with a keen interest in creating dynamic and responsive web applications. I enjoy solving complex problems and continuously learning new technologies. I'm dedicated to enhancing my skills and contributing to exciting projects.</p>
+        </section>
+
+        <!-- Skills Section -->
+        <section>
+            <h2>Skills</h2>
+            <ul class="skills">
+                <li>HTML, CSS, JavaScript</li>
+                <li>Java Programming Language</li>
+                <li>Backend development with Spring Boot</li>
+                <li>Database management with MySQL and MongoDB</li>
+            </ul>
+        </section>
+
+        <!-- Education Section -->
+        <section class="education">
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    <h3>SSLC</h3>
+                    <p>Shrushti Public School, 2017 - 2018</p>
+                    <p>Percentage: 95.36%</p>
+                </li>
+                <li>
+                    <h3>Pre-University College</h3>
+                    <p>St Theresa Pu College, 2018 - 2020</p>
+                    <p>Percentage: 90.0%</p>
+                </li>
+                <li>
+                    <h3>Bachelor of Computer Science Engineering</h3>
+                    <p>Sambhram Institute of Technology, 2020 - 2024</p>
+                    <p>CGPA: 8.3</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Projects Section -->
+        <section>
+            <h2>Projects</h2>
+            <p>Here are some projects I have worked on:</p>
+            <ul>
+                <li><strong>Personal Portfolio Website</strong> - A responsive website showcasing my skills and projects.</li>
+                <li><strong>Car Service System</strong> - A web-based car service management system for booking and tracking car services.</li>
+                <li><strong>Multiple Disease Prediction System</strong> - A machine learning-based web app predicting the likelihood of multiple diseases.</li>
+            </ul>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact">
+            <h2>Contact Me</h2>
+            <p>If you'd like to get in touch, feel free to reach out via email: <a href="mailto:ryamuna089@gmail.com">ryamuna089@gmail.com</a></p>
+        </section>
+
+    </div>
+
 </body>
 </html>
