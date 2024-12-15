@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Yamuna's Digital Resume showcasing skills, projects, and certifications.">
+    <meta name="keywords" content="Yamuna, Developer, Resume, Web Developer, Java, Python, Projects, Portfolio">
+    <meta name="author" content="Yamuna R">
+    <title>Yamuna's Digital Resume</title>
+    <style>
+        /* General Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            scroll-behavior: smooth;
+            background-color: #ecf0f1;
+        }
+
+        header {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 15px;
+            margin: 0 5px;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.2);
+            transition: background 0.3s ease;
+        }
+
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.5);
+        }
+
+        section {
+            min-height: 100vh;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        section p, ul, li {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .aboutme {
+            background: linear-gradient(135deg, #f39c12, #d35400);
+        }
+
+        .certifications {
+            background: linear-gradient(135deg, #1abc9c, #16a085);
+        }
+
+        .education {
+            background: linear-gradient(135deg, #9b59b6, #8e44ad);
+        }
+
+        .projects {
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+        }
+
+        .skills {
+            background: linear-gradient(135deg, #3498db, #2980b9);
+        }
+
+        .contact {
+            background: linear-gradient(135deg, #2ecc71, #27ae60);
+        }
+
+        .project-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .resume-btn {
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            color: white;
+            background: #34495e;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        .resume-btn:hover {
+            background: #2c3e50;
+        }
+
+        footer {
+            background: #34495e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Mobile Optimization */
+        @media screen and (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            section h2 {
+                font-size: 2rem;
+            }
+
+            section p, ul, li {
+                font-size: 1rem;
+            }
+
+            nav a {
+                font-size: 1rem;
+                padding: 8px 12px;
+            }
+
+            .project-card {
+                width: 90%;
+                margin: 10px auto;
+            }
+        }
+
+        /* Hover effect on skills list */
+        .skills ul li:hover {
+            background: rgba(255, 255, 255, 0.1);
+            padding-left: 10px;
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to My Digital Resume</h1>
+    <nav>
+        <a href="#aboutme">About Me</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="aboutme" class="aboutme">
+    <h2>About Me</h2>
+    <p>
+        Hi, I'm Yamuna, a passionate and dynamic developer with a strong interest in building user-friendly web applications. 
+        I excel in problem-solving and take pride in creating efficient and elegant solutions to complex challenges.
+    </p>
+    <p>
+        My journey into technology is driven by curiosity and determination to make a meaningful impact through my work. 
+        With a commitment to lifelong learning, I strive to stay updated on the latest industry trends.
+    </p>
+    <a href="files\resume.pdf" download class="resume-btn">Download My Resume</a>
+</section>
+
+<section id="certifications" class="certifications">
+    <h2>Certifications</h2>
+    <ul>
+        <li>Full Stack Java Development Certification - GQT</li>
+        <li>Python Programming - Udemy</li>
+        <li>Data Analysis - ICT Academy</li>
+        <li>Artificial Intelligence and Machine Learning - Nano Robotics</li>
+    </ul>
+</section>
+
+<section id="education" class="education">
+    <h2>Education</h2>
+    <p><strong>SSLC:</strong> Shrushti Public School (2017-2018), Percentage: 95.36%</p>
+    <p><strong>Pre-University:</strong> St Theresa PU College (2018-2020), Percentage: 90%</p>
+    <p><strong>Bachelor's:</strong> Sambhram Institute of Technology (2020-2024), CGPA: 8.3</p>
+</section>
+
+<section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>Built a responsive portfolio site using HTML, CSS, and JavaScript, showcasing projects and skills dynamically.</p>
+    </div>
+    <div class="project-card">
+        <h3>Car Service System</h3>
+        <p>Developed a car service management system using Java Servlets to schedule services and manage appointments.</p>
+    </div>
+    <div class="project-card">
+        <h3>Multiple Disease Prediction</h3>
+        <p>Implemented a machine learning model using Random Forest to predict the likelihood of diseases based on symptoms.</p>
+    </div>
+</section>
+
+<section id="skills" class="skills">
+    <h2>Skills</h2>
+    <ul>
+        <li><strong>Back-End Technologies:</strong> Java, JDBC, Hibernate, Servlets, Spring Framework, Spring MVC, Spring Boot</li>
+        <li><strong>Front-End Technologies:</strong> HTML, CSS, Bootstrap, JavaScript</li>
+        <li><strong>Database:</strong> MySQL, MongoDB</li>
+        <li><strong>Tools & IDEs:</strong> Eclipse, Postman, VS Code, NetBeans, Git (Version Control)</li>
+    </ul>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p><strong>Name:</strong> Yamuna R</p>
+    <p><strong>Phone:</strong> 99########</p>
+    <p><strong>Email:</strong> <a href="mailto:ryamuna089@gmail.com">ryamuna089@gmail.com</a></p>
+    <p><strong>Location:</strong> Bangalore - 562162</p>
+</section>
+
+<footer>
+    <p>&copy; 2024 Yamuna's Digital Resume</p>
+</footer>
+
+</body>
+</html>
